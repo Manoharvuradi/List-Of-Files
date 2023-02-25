@@ -1,0 +1,14 @@
+Create a header name Todo app
+make it center
+
+Create container has what would you like to add and button
+header->Add New Task
+task title
+input
+Due date
+input
+
+description
+input
+
+buttons -> close,Add

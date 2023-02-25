@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="headerLogo">
+            <h1 class="logo">Todo</h1>
+        </div>
+    </header>
+    
+    <section>
+        <div class="container">
+            <div class="bg-blur"></div>
+            <div class="addingTask">
+                <div class="box">
+                    <p>want to add Task</p>
+                </div>
+                <button class="btn">+</button>
+            </div>
+            <div id="listOfTasks"></div>
+        </div>
+
+        <div class="PopUpForm">
+            <form action="" id="form">
+                <p><b>Add New Task</b></p>
+                <box-icon name='x' id="close"></box-icon>
+                <br>
+                <label for="taskTitle"><b>Task title</b></label><br>
+                <input type="text" id="TaskTitle" name="userInputTitle">
+                <br><br>
+                <label for="Date"><b>Due Date</b></label><br>
+                <input type="date" id="dueDate" name="setDate">
+                <br><br>
+                <label for="des"><b>Description</b></label><br>
+                <textarea name="post" id="desInput" cols="10" rows="5"></textarea>
+                <br><br>
+                <div id="msg"></div>
+                <div class="buttons">
+                    <button type="submit" class="AddBtn">Add</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+
+    </footer>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="./script.js"></script>
+</body>
+</html>

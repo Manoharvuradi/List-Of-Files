@@ -1,0 +1,176 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.headerLogo{
+    width: 100%;
+    height: 100px;
+    background-color: black;
+}
+
+section{
+    padding: 50px 0px;
+}
+.container{
+    margin: auto;
+    width: 30%;
+    position: relative;
+}
+
+
+
+.logo{
+    padding-top: 25px;
+    text-align: center;
+    color: white;
+}
+.container .box{
+    width: 80%;
+    padding: 20px;
+    border: 3px solid green;
+}
+
+#content{
+    /* display: none; */
+    animation-name: list;
+    margin-top: 5%;
+    border: 3px solid green;
+    border-radius: 6px;
+}
+
+#listOfTasks div{
+    text-align: center;
+}
+
+#listOfTasks div span{
+    justify-self: center;
+    display: flex;
+    gap: 20px;
+}
+
+/* #listOfTasks div > span box-icon{
+    cursor: pointer;
+} */
+
+span box-icon{
+    cursor: pointer;
+}
+
+
+
+.btn{
+    background-color: steelblue;
+    border: none;
+    font-size:40px;
+    font-weight: bold;
+    width: calc(100% - 80%);
+    border: 3px solid green;
+    cursor: pointer;
+}
+
+.addingTask{
+    display: flex;
+}
+
+
+
+.PopUpForm form {
+    width: 30%;
+    height: auto;
+    border: 2px solid black;
+    padding: 10px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%,0%);
+    background-color: #FFF;
+}
+
+.PopUpForm {
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(50, 50, 50, 0.3);
+    /* display: none; */
+    transform: translateY(-100%);
+    opacity: 0;
+    transition: 0.3s ease-in-out;
+}
+
+.PopUpForm.show {
+    /* display: block; */
+    transform: translateY(0%);
+    opacity: 1;
+}
+
+.bg-blur{
+    /* Add the blur effect */
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
+.PopUpForm form button{
+    width: 100px;
+    height: 40px;
+    z-index: 2;
+}
+
+form box-icon{
+    position: absolute;
+    left: 90%;
+    top: 2%;
+    cursor: pointer;
+}
+
+#msg{
+    color: white;
+    background-color: red;
+}
+
+input{
+    width: 100%;
+}
+textarea{
+    width: 100%;
+}
+
+.CloseBtn{
+    background-color: gray;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.AddBtn{
+    background-color: steelblue;
+    border-radius: 5px;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+@media (max-width:760px){
+    .container {
+        margin: auto;
+        width: 70%;
+        position: relative;
+    }
+
+    .PopUpForm form {
+        width: 70%;
+        height: auto;
+        border: 2px solid black;
+        padding: 10px;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%, 0%);
+        background-color: #FFF;
+    }
+
+}
