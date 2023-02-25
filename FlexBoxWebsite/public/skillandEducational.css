@@ -1,0 +1,123 @@
+body{
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: black;
+}
+
+.bg-black{
+    color: #e50914 !important;
+    /* background-color: rgb(13,23,33) !important; */
+    background-color: black;
+}
+
+.txt-center{
+    text-align: center !important;
+}
+
+.skill-and-exp-content{
+    padding-left: 80px;
+    padding-right: 80px;
+}
+
+.skill-and-exp-content h1:hover{
+    color: white;
+    transition: .3s;
+}
+
+.skill-header{
+    color: #e50914;
+}
+
+
+.container-skills {
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+}
+
+.number-of-skills {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.skills {
+    border: 3px solid white;
+    width: 100px;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Source Sans Pro',
+        sans-serif;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    background-color: black;
+    color: white;
+}
+
+/* Education section */
+.table_format {
+    border-collapse: collapse;
+    font-size: 1em;
+    width: 100%;
+    margin-top: 3%;
+}
+
+/* descendents */
+.table_format thead tr {
+    background-color: #e50914;
+    color: #ffffff;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Group Combinators */
+.table_format th,
+.table_format td {
+    padding: 12px 15px;
+}
+
+.table_format tbody tr {
+    border-bottom: 1px solid rgb(198, 189, 189);
+}
+
+.table_format tbody tr:nth-child(1){
+    font-weight: bold;
+    color: white;
+}
+
+.table_format tbody tr:nth-child(3){
+    font-weight: bold;
+    color: white;
+}
+
+.table_format tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+    font-weight: bold;
+}
+
+.table_format tbody tr:last-of-type {
+    border-bottom: 2px solid #e50914;
+}
+
+@media (max-width:580px) {
+    .number-of-skills{
+        flex-wrap: wrap;
+    }
+    .table_format{
+        width: 100%;
+    }
+}
+
+
+/* align-content
+align-items
+align-self
+flex-direction
+flex-flow
+flex-wrap
+justify-content
+justify-items */

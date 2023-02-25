@@ -1,0 +1,35 @@
+
+html , body{
+    height: 100%;
+    /* width: 100%; */
+    margin: 0px;
+}
+
+
+main > header {
+    /* background-color: rgb(13, 23, 13) !important; */
+    background-color: black;
+}
+
+main > section{
+    /* background-color: rgb(13, 23, 13) !important; */
+    background-color: black;
+}
+
+main > footer {
+    /* background-color: rgb(13, 23, 13) !important; */
+    background-color: black;
+}
+
+.container-main > .container-header{
+    flex: 1;
+}
+
+.container-main >.container-home {
+    flex: 8;
+}
+
+.container-main >.container-footer {
+    flex: 1;
+}
+
