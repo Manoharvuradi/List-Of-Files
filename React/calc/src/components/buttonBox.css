@@ -1,0 +1,9 @@
+.button-box{
+    width: 330px;
+    height: calc(600px - 150px);
+    border: 1px solid blue;
+    margin: auto;
+    margin-top: 25px;
+    margin-bottom: 25px;
+
+}

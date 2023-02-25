@@ -1,0 +1,9 @@
+button{
+    height: 44px;
+    width: 44px;
+    border: 1px solid green;
+}
+
+.inputs{
+    display: flex;
+}

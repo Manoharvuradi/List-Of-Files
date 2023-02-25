@@ -1,0 +1,14 @@
+<>
+    <Screen value={this.state.value} />
+    <Dialpad
+        onExecute="() => {
+            //
+        }"
+        onPressOperation={(o) => {
+            //
+        }}
+        onPressNumber={(numOrOperator) => {
+//
+        }}
+    />
+</>

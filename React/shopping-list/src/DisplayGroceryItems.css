@@ -1,0 +1,39 @@
+.table_format {
+    margin: auto;
+    border-collapse: collapse;
+    margin: 25px;
+    font-size: 1em;
+    min-width: 400px;
+}
+
+.result{
+    margin: auto;
+    display: flex;
+    justify-content: center;
+}
+
+/* descendents */
+.table_format thead tr {
+    background-color: #009879;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+/* Group Combinators */
+.table_format th,
+.table_format td {
+    padding: 12px 15px;
+}
+
+.table_format tbody tr {
+    border-bottom: 1px solid rgb(198, 189, 189);
+}
+
+/* Accessing the odd and even rows in table */
+.table_format tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+.table_format tbody tr:last-of-type {
+    border-bottom: 2px solid #009879;
+}

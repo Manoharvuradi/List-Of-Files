@@ -1,0 +1,29 @@
+->take three inputs 
+1.Grocery Name
+2.Rate.(take rate per 1kg), If user enters 2kg or 3kg of quantity just multiply it with "rate".
+3.Quantity
+
+->Now i have three parameters i have to push it to the array.
+Questions
+    1.if i push all those in single array how its possible to render it?
+    Ans:
+    const GroceryList = [
+     { Grocery Name: Wheat, Rate: 40rs pkg, Quantity:2kgs  },
+     { Grocery Name: surf excel, Rate: 20rs pkg, Quantity:3kgs }
+    ];
+
+
+var gList = 'Wheat'
+var rate = 40
+var quantity = 2
+var total = rate * quantity;
+let obj = {};
+obj["grocery"] = gList;
+obj["rate"] = rate+'rs kg';
+obj['quantity'] = quantity+"kg";
+obj['total'] = total+'rs';
+const arr = [];
+arr.push(obj);
+console.log(arr);
+
+

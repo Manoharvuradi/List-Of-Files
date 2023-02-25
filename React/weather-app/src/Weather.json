@@ -1,0 +1,43 @@
+{
+    "coord": {
+        "lon": 78.3734,
+        "lat": 17.433
+    },
+    "weather": [
+        {
+            "id": 800,
+            "main": "Clear",
+            "description": "clear sky",
+            "icon": "01d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 303.92,
+        "feels_like": 302,
+        "temp_min": 303.92,
+        "temp_max": 305.42,
+        "pressure": 1015,
+        "humidity": 19
+    },
+    "visibility": 6000,
+    "wind": {
+        "speed": 2.57,
+        "deg": 350
+    },
+    "clouds": {
+        "all": 1
+    },
+    "dt": 1676625099,
+    "sys": {
+        "type": 1,
+        "id": 9214,
+        "country": "IN",
+        "sunrise": 1676596359,
+        "sunset": 1676638124
+    },
+    "timezone": 19800,
+    "id": 1265767,
+    "name": "Kūkatpalli",
+    "cod": 200
+}
