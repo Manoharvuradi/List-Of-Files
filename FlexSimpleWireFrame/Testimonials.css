@@ -1,0 +1,135 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.test > h3{
+    font-style: normal;
+    font-weight: 400;
+    font-size: 48px;
+    line-height: 72px;
+
+    text-align: center;
+    letter-spacing: -0.015rem;
+
+    color: #000000;
+}
+
+.test > p{
+    /* position: absolute; */
+
+    font-style: normal;
+    font-weight: 40;
+    font-size: 20px;
+    line-height: 50px;
+
+    text-align: center;
+    letter-spacing: -0.015em;
+}
+
+.rectangle{
+    height: 76px;
+    width: 173px;
+
+    box-sizing: border-box;
+    background: red;
+    
+}
+
+.list-of-rect{
+    width: 90%;
+    overflow: hidden;
+    margin:20px auto ;
+    padding: 20px;
+}
+
+.list-of-rect ul{
+    padding: 0px;
+    margin: 0px;
+}
+
+.list-of-rect ul li{
+    list-style: none;
+    float: left;
+    width: 173px;
+    height: 76px;
+    background: red;
+    margin: 40px 40px 0px 55px;
+}
+
+.body-article > p{
+    font-style: normal;
+    font-weight: 40;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+}
+
+.body-article2 > p{
+    font-style: normal;
+    font-weight: 40;
+    font-size: 20px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+}
+
+
+.goto {
+    position: fixed;
+    width: 50px;
+    height: 50px;
+    background-color: #27ae60;
+    bottom: 40px;
+    right: 50px;
+
+    text-decoration: none;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+}
+
+.test > p{
+    text-align: center;
+}
+
+.testimonials {
+    text-align: center;
+    padding: 3% 10%;
+}
+
+
+/* sign-up */
+
+.sign-up{
+    /* width: 100%; */
+    display: flex;
+    background-color: #F5F5F5;
+    padding: 3%;
+}
+
+.sign-up .text{
+    height: 100px;
+    width: 60%;
+    text-align: center;
+}
+
+.buttons{
+    margin: 20px;
+
+}
+
+.buttons>button {
+    border-radius: 10px;
+    border: 1px solid blue;
+    color: steelblue;
+    font-weight: 600;
+    cursor: pointer;
+    margin: 10px;
+    padding: 10px;
+    background-color: white;
+}
+
+.buttons>button:last-of-type {
+    background-color: steelblue;
+    color: white;
+}

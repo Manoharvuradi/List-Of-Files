@@ -1,0 +1,40 @@
+.nav-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 3%;
+}
+
+
+.nav-footer>h1 {
+    color: black;
+    font-size: 28px;
+}
+
+.nav-footer>h1:hover {
+    cursor: pointer;
+}
+
+.nav-footer ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px 20px;
+    font-weight: bold;
+}
+
+.nav-footer ul li:hover {
+    color: steelblue;
+    transition: .3s;
+}
+
+.sponsers{
+    padding: 3% 3%;
+    box-sizing: border-box;
+    position: absolute;
+    left: 43%;
+}
+.sponsers .ads{
+    height: 44px;
+    width: 44px;
+}
+
+
