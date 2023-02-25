@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="right-side">
+            <form action="">
+                <div class="display">
+                    <input type="text" name="result" id="userInputValue" class="op">
+                    <!-- <p class="demo"></p> -->
+                </div>
+                <div class="inputs">
+                    <input type="reset"  value="C" class="input-button operators" onclick = "result.value = '' ">
+                    <input type="button" value="%" class="input-button operators" onclick = "result.value += '%' ">
+                    <input type="button" value="del" class="input-button operators" onclick = "result.value = result.value.toString().slice(0,-1) ">
+                    <input type="button" value="/" class="input-button operators" onclick = "result.value += '/' ">
+                </div>
+
+                <div class="inputs">
+                    <input type="button" value="7" class="input-button" onclick = "result.value += '7' ">
+                    <input type="button" value="8" class="input-button" onclick = "result.value += '8' ">
+                    <input type="button" value="9" class="input-button" onclick = "result.value += '9' ">
+                    <input type="button" value="*" class="input-button operators" onclick = "result.value += '*' ">
+                </div>
+
+                <div class="inputs">
+                    <input type="button" value="4" class="input-button" onclick = "result.value += '4' ">
+                    <input type="button" value="5" class="input-button" onclick = "result.value += '5' ">
+                    <input type="button" value="6" class="input-button" onclick = "result.value += '6' ">
+                    <input type="button" value="-" class="input-button operators" onclick="result.value += '-' ">
+                </div>
+
+                <div class="inputs">
+                    <input type="button" value="1" class="input-button" onclick = "result.value += '1' ">
+                    <input type="button" value="2" class="input-button" onclick = "result.value += '2' ">
+                    <input type="button" value="3" class="input-button" onclick = "result.value += '3' ">
+                    <input type="button" value="+" class="input-button operators" onclick="result.value += '+' ">
+                </div>
+
+                <div class="inputs">
+                    <input type="button" value="00" class="input-button" onclick = "result.value += '00' ">
+                    <input type="button" value="0" class="input-button" onclick = "result.value += '0' ">
+                    <input type="button" value="." class="input-button" onclick = "result.value += '.' ">
+                    <input type="button" value="=" class="input-button special" onclick = "result.value = eval(result.value)">
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./calc.js"></script>
+</body>
+</html>
+
+
+<!-- onclick="result.value = eval(result.value)" -->

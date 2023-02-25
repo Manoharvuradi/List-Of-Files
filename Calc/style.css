@@ -1,0 +1,140 @@
+html,body{
+    margin: 0px;
+    padding: 0px;
+    font-family: Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* overflow: hidden; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.container{
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+}
+.right-side{
+    float: right;
+    border-radius: 10px;
+    margin-right: 10px;
+    margin-top: 190px;
+    /* background-color: ; */
+}
+
+input[value=""]{
+    font-size: bold;
+}
+.right-side form input{
+    font-size: bold;
+}
+
+div input{
+    margin: 10px;
+}
+
+form .inputs{
+    margin: 10px;
+}
+
+form .display{
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    margin: 10px;
+    margin-left: 20px;   
+}
+
+
+
+
+.display input{
+    text-align: right;
+    border-style: hidden;
+    flex: 1;
+    height: 50px;
+    width: 90%;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    box-shadow: none;
+}
+
+/* .display .demo{
+    font-size: large;
+    color: white;
+    float: right;
+} */
+
+.inputs{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.input-button{
+    height: 70px;
+    width: 70px;
+    color: white;
+    background-color: rgb(74, 79, 84);
+    border-radius: 50px;
+    border: none;
+}
+
+.input-button:hover{
+    background-color: white;
+    color: black;
+    transform: .3s;
+    font-size: bold;
+    cursor: pointer;
+}
+
+.operators{
+    background-color: rgb(175, 167, 167);
+}
+
+.special{
+    background-color: rgb(240, 159, 11);
+}
+
+
+
+@media (max-width:380px){
+    .display input {
+        height: 40px;
+    }
+    .right-side {
+        float: right;
+        border-radius: 10px;
+        margin-top: 80px;
+    }
+}
+
+/* @media (min-width:820px) {
+    .display input{
+        height: 40px;
+    }
+    .right-side{
+        float: right;
+        border-radius: 10px;
+        margin-top: 300px;
+    }
+} */
+
+/* @media (min-width:) {
+    
+} */
+
+/* @media (min-width:390px){
+    .display input{
+        height: 40px;
+    }
+    .right-side{
+        float: right;
+        border-radius: 10px;
+        margin-top: 200px;
+    }
+}
+
+@media (max-width:812px) {
+    .right-side{
+        float: right;
+        border-radius: 10px;
+        margin-top: 50%;
+    }
+} */
