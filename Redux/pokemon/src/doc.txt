@@ -1,0 +1,100 @@
+using useRoutes
+const elementd = useRoutes([
+    { path: "/", element: <Container /> },
+    {
+path: `${userName}`,
+    element: (
+        <>
+        <Container />
+        <UserData singleUserApi={singleUserApi} />
+        </>
+    ),
+    },
+]);
+
+
+ <Router>
+    <Routes>
+      <Route path="/" element={<UserList />} />
+      <Route path=":" element={<UserData />} />
+    </Routes>
+  </Router>
+
+
+ const location = useLocation();
+   const navigate = useNavigate();
+   console.log(location);
+   const [apiData, setApiData] = useState([]);
+   const [singleUserApi, setSingleApiUser] = useState();
+   const [userName, setUserName] = useState("");
+   const fetchData = async () => {
+     await fetch("https:pokeapi.co/api/v2/pokemon?limit=100")
+       .then((res) => {
+         res.json().then((info) => {
+           setApiData(info);
+         });
+       })
+       .catch((error) => {
+         console.log("Something went wrong " + error);
+       });
+   };
+   useEffect(() => {
+     fetchData();
+   }, []);
+   console.log(apiData);
+   const handleUser = async (url, name) => {
+     setUserName(name);
+     console.log(userName);
+     await fetch(url)
+       .then((res) => {
+         res.json().then((info) => {
+           setSingleApiUser(info);
+         });
+       })
+       .catch((error) => {
+         console.log("something went wrong in single user Api " + error);
+       });
+   };
+   const Container = () => {
+     return (
+       <div>
+         <div className="left-side">
+           <div className="images">
+             <img src={logo} alt="" />
+           </div>
+           <ul className="user-list">
+             {apiData.results?.map((userName, index) => {
+               return (
+                 <li
+                   key={index}
+                   onClick={() => {
+                     handleUser(userName.url, userName.name);
+                     navigate(`${userName.name}`);
+                   }}
+
+                 >
+                   {userName.name}
+                 </li>
+               );
+             })}
+           </ul>
+         </div>
+       </div>
+     );
+   };
+
+   const elementd = useRoutes([
+     { path: "/", element: <Container /> },
+     {
+   path: `${userName}`,
+       element: (
+         <>
+           <Container />
+           <UserData singleUserApi={singleUserApi} />
+         </>
+       ),
+     },
+   ]);
+
+
+   ****===>Take one common component add userList and userData 
