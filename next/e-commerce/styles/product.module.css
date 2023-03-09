@@ -1,0 +1,31 @@
+.product{
+    display: flex;
+}
+.productImage{
+    width: 400px;
+    height: 400px;
+}
+.left{
+    padding-top: 10px;
+    width: 500px;
+}
+
+.right{
+    padding-top: 10px;
+    width: calc(100vw - 500px);
+    margin-left: 30px;
+}
+
+.price{
+    background-color: rgba(0, 255, 255, 0.9);
+    width: fit-content;
+}
+
+.cart{
+    background-color: yellow;
+    font-weight: bold;
+    padding: 10px;
+    font-size: 14px;
+    cursor: pointer;
+    border-radius: 5px;
+}

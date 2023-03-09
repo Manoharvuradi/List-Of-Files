@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Poppins:wght@300&display=swap');
+
+
+*{
+  margin: 0px;
+  padding: 0px;
+  font-family: 'Poppins';
+}
+
+.list-of-product {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+.list-of-product li {
+  list-style-type: none;
+  color: black;
+  float: left;
+  width: 250px;
+  height: 400px;
+  margin: 20px 10px 20px 60px;
+  box-shadow: 0 0 50px #cccccc88;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 150px;
+  height: 200px;
+  background-position: center;
+}
+
+
+/* .list-of-product {
+  width: 90%;
+  text-align: center;
+  overflow: hidden;
+  margin: auto;
+}
+
+.list-of-product ul {
+  padding: 0px;
+  margin: 0px;
+}
+
+.list-of-product ul li {
+  list-style-type: none;
+  float: left;
+  width: 250px;
+  height: 400px;
+  margin: 20px 10px 20px 60px;
+  box-shadow: 0 0 50px #cccccc88;
+  border-radius: 10px;
+}
+
+.product-image {
+  width: 150px;
+  height: 200px;
+  background-position: center;
+} */

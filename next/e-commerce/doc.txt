@@ -1,0 +1,10 @@
+=>use Redux to add the items into the cart 
+1.create action
+2.create object
+3.create reducer
+4. dispatch it
+
+setting Quantity:
+=>The quantity should not reflect to another product.
+ for that create one variable set it to ====>quantity:1
+=>l
